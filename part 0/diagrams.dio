@@ -1,0 +1,159 @@
+<mxfile host="65bd71144e">
+    <diagram id="vKi-Xl_EB73gg_DeYqkn" name="Page-1">
+        <mxGraphModel dx="1150" dy="991" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="Browser" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="80" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="Server" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="580" y="80" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="Browser" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="680" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="Server" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="580" y="680" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="" style="endArrow=none;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="4" target="2" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="530" y="530" as="sourcePoint"/>
+                        <mxPoint x="580" y="480" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="8" value="" style="endArrow=none;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="639.5" y="680" as="sourcePoint"/>
+                        <mxPoint x="639.5" y="140" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="9" value="" style="endArrow=classic;html=1;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="120" y="180" as="sourcePoint"/>
+                        <mxPoint x="650" y="180" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="10" value="&lt;span style=&quot;font-size: 14px&quot;&gt;HTTP&amp;nbsp; GET -&amp;gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: rgb(205 , 205 , 205) ; font-family: &amp;#34;consolas&amp;#34; , &amp;#34;lucida console&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; background-color: rgb(32 , 33 , 36)&quot;&gt;https://studies.cs.helsinki.fi/exampleapp/spa&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;Status: 200&lt;br&gt;&amp;nbsp;&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="135" y="150" width="480" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="" style="endArrow=classic;html=1;fontSize=14;startArrow=none;" parent="1" source="12" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="640" y="230" as="sourcePoint"/>
+                        <mxPoint x="120" y="230" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="12" value="&lt;span style=&quot;font-size: 14px&quot;&gt;HTML sent back to browser&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="150" y="210" width="480" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="" style="endArrow=none;html=1;fontSize=14;" parent="1" target="12" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="640" y="230" as="sourcePoint"/>
+                        <mxPoint x="120" y="230" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="15" value="Note: Here the HTML being sent back contains the &amp;lt;h1&amp;gt;Notes -- Single Page App&amp;lt;/h1&amp;gt;, and the &amp;lt;input&amp;gt; for the note and save button&lt;br&gt;it also sends the stylesheet for the css and the spa.js file" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" parent="1" vertex="1">
+                    <mxGeometry x="350" y="195" width="270" height="115" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="" style="endArrow=classic;html=1;startArrow=none;" parent="1" source="17" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="120" y="380" as="sourcePoint"/>
+                        <mxPoint x="650" y="380" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="17" value="&lt;span style=&quot;font-size: 14px&quot;&gt;HTTP&amp;nbsp; GET -&amp;gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: rgb(205 , 205 , 205) ; font-family: &amp;#34;consolas&amp;#34; , &amp;#34;lucida console&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; background-color: rgb(32 , 33 , 36)&quot;&gt;https://studies.cs.helsinki.fi/exampleapp/main.css&lt;/span&gt;&lt;span style=&quot;color: rgb(205 , 205 , 205) ; font-family: &amp;#34;consolas&amp;#34; , &amp;#34;lucida console&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; background-color: rgb(32 , 33 , 36)&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;Status: 200&lt;br&gt;&amp;nbsp;&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="130" y="350" width="480" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="" style="endArrow=none;html=1;" parent="1" target="17" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="120" y="380" as="sourcePoint"/>
+                        <mxPoint x="650" y="380" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="19" value="&lt;span style=&quot;font-size: 14px&quot;&gt;main.css styling for .container and .notes classes rendered in the DOM&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="130" y="410" width="480" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="" style="endArrow=classic;html=1;fontSize=14;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="640" y="440" as="sourcePoint"/>
+                        <mxPoint x="120" y="440" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="22" value="&lt;span style=&quot;font-size: 14px&quot;&gt;HTTP&amp;nbsp; GET -&amp;gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: rgb(205 , 205 , 205) ; font-family: &amp;#34;consolas&amp;#34; , &amp;#34;lucida console&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; background-color: rgb(32 , 33 , 36)&quot;&gt;https://studies.cs.helsinki.fi/exampleapp/spa.js&lt;/span&gt;&lt;span style=&quot;color: rgb(205 , 205 , 205) ; font-family: &amp;#34;consolas&amp;#34; , &amp;#34;lucida console&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; background-color: rgb(32 , 33 , 36)&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;Status: 200&lt;br&gt;&amp;nbsp;&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="140" y="470" width="480" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="" style="endArrow=classic;html=1;fontSize=14;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="120" y="500" as="sourcePoint"/>
+                        <mxPoint x="640" y="500" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="24" value="" style="endArrow=classic;html=1;fontSize=14;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="640" y="570" as="sourcePoint"/>
+                        <mxPoint x="120" y="570" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="25" value="&lt;span style=&quot;font-size: 14px&quot;&gt;script in spa.js javascript file read&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="130" y="530" width="480" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="The spa.js file fires a GET request to data.json using xhttp.open() then submits each value in the note to the DOM in the html element with id = &quot;notes_form&quot;. This allows the UI to be 'painted' with the notes from the json file on window.onLoad" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" parent="1" vertex="1">
+                    <mxGeometry x="220" y="580" width="270" height="115" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram name="Copy of Page-1" id="XCxgO8t0_zcSwnT-TaBv">
+        <mxGraphModel dx="1150" dy="991" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="nZo9H_eOz3-jqAJtGvoD-0"/>
+                <mxCell id="nZo9H_eOz3-jqAJtGvoD-1" parent="nZo9H_eOz3-jqAJtGvoD-0"/>
+                <mxCell id="nZo9H_eOz3-jqAJtGvoD-2" value="Browser" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="nZo9H_eOz3-jqAJtGvoD-1">
+                    <mxGeometry x="60" y="80" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="nZo9H_eOz3-jqAJtGvoD-3" value="Server" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="nZo9H_eOz3-jqAJtGvoD-1">
+                    <mxGeometry x="580" y="80" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="nZo9H_eOz3-jqAJtGvoD-4" value="Browser" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="nZo9H_eOz3-jqAJtGvoD-1">
+                    <mxGeometry x="60" y="680" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="nZo9H_eOz3-jqAJtGvoD-5" value="Server" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="nZo9H_eOz3-jqAJtGvoD-1">
+                    <mxGeometry x="580" y="680" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="nZo9H_eOz3-jqAJtGvoD-6" value="" style="endArrow=none;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="nZo9H_eOz3-jqAJtGvoD-1" source="nZo9H_eOz3-jqAJtGvoD-4" target="nZo9H_eOz3-jqAJtGvoD-2">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="530" y="530" as="sourcePoint"/>
+                        <mxPoint x="580" y="480" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="nZo9H_eOz3-jqAJtGvoD-7" value="" style="endArrow=none;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="nZo9H_eOz3-jqAJtGvoD-1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="639.5" y="680" as="sourcePoint"/>
+                        <mxPoint x="639.5" y="140" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="nZo9H_eOz3-jqAJtGvoD-9" value="&lt;span style=&quot;font-size: 14px&quot;&gt;HTTP&amp;nbsp; POST -&amp;gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: rgb(205 , 205 , 205) ; font-family: &amp;#34;consolas&amp;#34; , &amp;#34;lucida console&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; background-color: rgb(32 , 33 , 36)&quot;&gt;https://studies.cs.helsinki.fi/exampleapp/new_note_spa&lt;/span&gt;&lt;span style=&quot;color: rgb(205 , 205 , 205) ; font-family: &amp;#34;consolas&amp;#34; , &amp;#34;lucida console&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; background-color: rgb(32 , 33 , 36)&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;Status: 201&lt;br&gt;&amp;nbsp;&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="nZo9H_eOz3-jqAJtGvoD-1">
+                    <mxGeometry x="130" y="170" width="480" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="nZo9H_eOz3-jqAJtGvoD-12" value="" style="endArrow=none;html=1;fontSize=14;" edge="1" parent="nZo9H_eOz3-jqAJtGvoD-1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="640" y="230" as="sourcePoint"/>
+                        <mxPoint x="630" y="229.79999999999995" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="nZo9H_eOz3-jqAJtGvoD-17" value="&lt;span style=&quot;font-size: 14px&quot;&gt;note appears in the DOM because of the redrawNotes() function and also is visible in the console because of console.log(this.responseText) in sendToServer()&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="nZo9H_eOz3-jqAJtGvoD-1">
+                    <mxGeometry x="130" y="340" width="480" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="nZo9H_eOz3-jqAJtGvoD-18" value="" style="endArrow=classic;html=1;fontSize=14;" edge="1" parent="nZo9H_eOz3-jqAJtGvoD-1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="640" y="380" as="sourcePoint"/>
+                        <mxPoint x="120" y="380" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="nZo9H_eOz3-jqAJtGvoD-24" value="The notes_form listens for an 'onSubmit' event, where the in note is stored as the value submitted on the event&lt;br&gt;&lt;br&gt;that note is then eventually passed to sendToServer() which sends the POST request to the new_note_spa API endpoint" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="nZo9H_eOz3-jqAJtGvoD-1">
+                    <mxGeometry x="260" y="180" width="270" height="130" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
