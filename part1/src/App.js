@@ -1,23 +1,39 @@
-const Hello = (props) => {
+import { useState } from 'react'
+import Display from './components/Display';
+import Button from './components/Button';
+//pass in already decontructed properties (props) into functional component
+//would normally be read as props.name and props.age as an object
+const Hello = ({name, age}) => {
+  const bornYear = () => new Date().getFullYear() - age
+
   return (
     <div>
       <p>
-        Hello {props.name}, you are {props.age} years old
+        Hello {name}, you are {age} years old
       </p>
+      <p>You were probably born in {bornYear()}</p>
     </div>
-  )
+  );
 }
 
 const App = () => {
-  const name = 'Ivy'
-  const age = 29
+  const [ counter, setCounter ] = useState(0)
+  
+  const increaseByOne = () => {
+    setCounter(counter + 1)
+  }
+  const setToZero = () => {
+    setCounter(0)
+  }
+
   return (
     <div>
-      <h1>Greetings</h1>
-      <Hello name="Maya" age={26 + 10} />
-      <Hello name={name} age={age} />
+      {" "}
+      <Display counter={counter}/>
+      <Button onClick={increaseByOne} text={'Increase'}/>
+      <Button onClick={setToZero} text={'Reset'}/>
     </div>
-  )
+  );
  
 }
 
