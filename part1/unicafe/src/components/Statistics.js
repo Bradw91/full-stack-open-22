@@ -1,4 +1,4 @@
-const Statistics = ({ good, bad, neutral, all, positive }) => {
+const Statistics = ({ good, bad, neutral, all, average, positive }) => {
 
   if (all === 0) {
     return (
@@ -14,6 +14,7 @@ const Statistics = ({ good, bad, neutral, all, positive }) => {
       <p>Neutral: {neutral}</p>
       <p>Bad: {bad}</p>
       <p>All: {all}</p>
+      <p>Average: {average}</p>
       <p>Percent Positive: {positive}</p>
     </div>
   )

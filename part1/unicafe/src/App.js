@@ -24,16 +24,10 @@ const App = () => {
     console.log(neutral)
   }
 
-  const countAll = (good, bad, neutral) => {
-    let result = good + bad + neutral
-    return result
-  }
-  // good = -1 neutral = 0 bad = -1
-  // const calcAverage = (good, neutral, bad) => {
-  //   let average = 0
+  const all = good + neutral + bad;
 
-  // }
-  
+  const average = ((good - bad) / all).toFixed(3);
+
   const percentPositive = (all, good) => {
     let result = Math.round((good / all) * 100,2);
     if (isNaN(result)){
@@ -49,7 +43,7 @@ const App = () => {
       <Button text='Good' onClick={handleGood}/>
       <Button text='Neutral' onClick={handleNeutral}/>
       <Button text='Bad' onClick={handleBad}/>
-      <Statistics good={good} neutral={neutral} bad={bad} all={countAll(good, neutral, bad)}  positive={percentPositive(countAll(good, neutral,bad), good)}/>
+      <Statistics good={good} neutral={neutral} bad={bad} all={all} average={average} positive={percentPositive(all, good)}/>
     </div>
   )
 }
