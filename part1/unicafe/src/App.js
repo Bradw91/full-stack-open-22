@@ -24,6 +24,12 @@ const App = () => {
     console.log(neutral)
   }
 
+  const handleReset = () => {
+    setGood(0)
+    setBad(0)
+    setNeutral(0)
+  }
+
   const all = good + neutral + bad;
 
   const average = ((good - bad) / all).toFixed(3);
@@ -44,6 +50,8 @@ const App = () => {
       <Button text='Neutral' onClick={handleNeutral}/>
       <Button text='Bad' onClick={handleBad}/>
       <Statistics good={good} neutral={neutral} bad={bad} all={all} average={average} positive={percentPositive(all, good)}/>
+      <br />
+      <Button text="Reset Feedback" onClick={handleReset}/>
     </div>
   )
 }
