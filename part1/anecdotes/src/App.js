@@ -26,15 +26,21 @@ const App = () => {
     setVotes(copy)
   }
 
+  const mostPopular = votes.indexOf(Math.max(...votes))
+
   return (
     <div>
-      <h1>{anecdotes[selected]}</h1>
+      <h1>Anecdote of the Day</h1>
+      <p>{anecdotes[selected]}</p>
       <p>Has {votes[selected]} votes</p>
       <br />
-      <Button text='Vote' onClick={handleVote}/>
-      <Button text='Next Anecdote' onClick={getRandomAnecdote}/>
+      <Button text="Vote" onClick={handleVote} />
+      <Button text="Next Anecdote" onClick={getRandomAnecdote} />
+      <br />
+      <h1>Most Popular Anecdote</h1>
+      <p>{anecdotes[mostPopular]}</p>
     </div>
-  )
+  );
 }
 
 export default App
