@@ -1,7 +1,9 @@
 const Statistic = ({ text, value }) => (
-  <div>
-    <p>{text}: {value}</p>
-  </div>
+  <tr>
+    <td>
+      {text}: {value}
+    </td>
+  </tr>
 );
 
-export default Statistic
+export default Statistic;
