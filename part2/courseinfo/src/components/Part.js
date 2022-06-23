@@ -2,7 +2,7 @@ const Part = ({ part }) => {
   return (
     <>
       <p>
-        {part.name}: {part.exercises} exercises
+        <strong>{part.name}</strong>: {part.exercises} exercises
       </p>
     </>
   );
